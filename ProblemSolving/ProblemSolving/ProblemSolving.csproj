@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="Watermelon.cs" />
+    <Compile Remove="WayTooLongWords.cs" />
   </ItemGroup>
 
 </Project>
