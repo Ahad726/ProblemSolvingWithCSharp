@@ -15,47 +15,35 @@ namespace ProblemSolving
 
             int evenCOunt = 0;
             int oddCount = 0;
-            int index = 0;
+            int evenIndex = 0;
+            int oddIndex = 0;
 
-            foreach (var item in arr)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (item % 2 == 0)
+
+                if (arr[i] % 2 == 0)
                 {
+                    evenIndex = i;
                     evenCOunt++;
                 }
                 else
                 {
+                    oddIndex = i;
                     oddCount++;
                 }
             }
+ 
 
             if (evenCOunt > oddCount)
             {
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    if (arr[i] % 2 != 0)
-                    {
-                        index = i;
-                        break;
-                    }
-                }
+                Console.WriteLine(oddIndex+1);
             }
 
             else
             {
-
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    if (arr[i] % 2 == 0)
-                    {
-                        index = i;
-                        break;
-                    }
-                }
+                Console.WriteLine(evenIndex + 1);
+               
             }
-
-
-            Console.WriteLine(index+1);
         }
 
 
