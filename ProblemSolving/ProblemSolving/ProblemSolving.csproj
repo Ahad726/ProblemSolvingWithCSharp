@@ -10,6 +10,7 @@
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="NextRound.cs" />
+    <Compile Remove="PetyaAndStrings.cs" />
     <Compile Remove="StringTask.cs" />
     <Compile Remove="Team.cs" />
     <Compile Remove="TheatreSquare.cs" />
