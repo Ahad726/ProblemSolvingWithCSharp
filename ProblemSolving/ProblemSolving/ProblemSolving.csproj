@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BeautifulMatrix.cs" />
     <Compile Remove="Bit.cs" />
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="DominoPiling.cs" />
