@@ -10,6 +10,7 @@
     <Compile Remove="Bit.cs" />
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="DominoPiling.cs" />
+    <Compile Remove="Football.cs" />
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="IQtest.cs" />
     <Compile Remove="NextRound.cs" />
