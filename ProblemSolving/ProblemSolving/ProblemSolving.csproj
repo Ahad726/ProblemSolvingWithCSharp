@@ -22,6 +22,7 @@
     <Compile Remove="Watermelon.cs" />
     <Compile Remove="WayTooLongWords.cs" />
     <Compile Remove="WordCapitalization.cs" />
+    <Compile Remove="YoungPhysicist.cs" />
   </ItemGroup>
 
 </Project>
