@@ -5,7 +5,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
   <ItemGroup>
+    <Compile Remove="BearAndBigBrother.cs" />
     <Compile Remove="BeautifulMatrix.cs" />
     <Compile Remove="Bit.cs" />
     <Compile Remove="BoyOrGirl.cs" />
