@@ -15,6 +15,7 @@
     <Compile Remove="Bit.cs" />
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="DominoPiling.cs" />
+    <Compile Remove="Elephant.cs" />
     <Compile Remove="Football.cs" />
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="IQtest.cs" />
