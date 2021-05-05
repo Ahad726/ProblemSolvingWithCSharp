@@ -14,11 +14,13 @@
     <Compile Remove="BeautifulMatrix.cs" />
     <Compile Remove="Bit.cs" />
     <Compile Remove="BoyOrGirl.cs" />
+    <Compile Remove="ChatRoom.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Elephant.cs" />
     <Compile Remove="Football.cs" />
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="IQtest.cs" />
+    <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
     <Compile Remove="PetyaAndStrings.cs" />
