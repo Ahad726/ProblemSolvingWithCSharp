@@ -19,6 +19,7 @@
     <Compile Remove="Football.cs" />
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="IQtest.cs" />
+    <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
     <Compile Remove="PetyaAndStrings.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
