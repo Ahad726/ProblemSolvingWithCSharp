@@ -10,11 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AddTwoNumbers .cs" />
     <Compile Remove="BearAndBigBrother.cs" />
     <Compile Remove="BeautifulMatrix.cs" />
     <Compile Remove="Bit.cs" />
     <Compile Remove="BoyOrGirl.cs" />
-    <Compile Remove="ChatRoom.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Elephant.cs" />
     <Compile Remove="Football.cs" />

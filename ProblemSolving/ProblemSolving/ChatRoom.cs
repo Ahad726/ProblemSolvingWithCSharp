@@ -9,20 +9,29 @@ namespace ProblemSolving
         static void Main(string[] args)
         {
             string word = Console.ReadLine();
+            int hIndex = 0;
+            int eIndex = 0;
+            int lindex = 0;
+            int scndLindex = 0;
+            int oIndex = 0;
 
             int wordLength = word.Length;
 
-            int hIndex = word.IndexOf('h');
+            hIndex = word.IndexOf('h');
 
-            int eIndex = word.IndexOf('e', hIndex);
+            if(hIndex > -1)
+                eIndex = word.IndexOf('e', hIndex+1);
 
-            int lindex = word.IndexOf('l', eIndex);
+            if(eIndex > 0)
+                lindex = word.IndexOf('l', eIndex+1);
 
-            int scndLindex = word.IndexOf('l', lindex);
+            if(lindex > 0)
+                scndLindex = word.IndexOf('l',lindex+1);
 
-            int oIndex = word.IndexOf('o', scndLindex);
+            if(scndLindex > 0)
+                oIndex = word.IndexOf('o', scndLindex+1);
 
-            if (hIndex > 0 && eIndex > 0 && lindex > 0 && scndLindex > 0 && oIndex >0 )
+            if (hIndex >= 0 && eIndex > 0 && lindex > 0 && scndLindex > 0 && oIndex >0 )
             {
                 Console.WriteLine("YES");
             }
