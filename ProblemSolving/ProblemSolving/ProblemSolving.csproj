@@ -31,6 +31,8 @@
     <Compile Remove="Team.cs" />
     <Compile Remove="TheatreSquare.cs" />
     <Compile Remove="Tram.cs" />
+    <Compile Remove="Translation.cs" />
+    <Compile Remove="Twins.cs" />
     <Compile Remove="VanyaAndLanterns.cs" />
     <Compile Remove="Watermelon.cs" />
     <Compile Remove="WayTooLongWords.cs" />
