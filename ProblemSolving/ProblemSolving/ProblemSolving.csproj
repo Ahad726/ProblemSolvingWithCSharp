@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <Compile Remove="AddTwoNumbers .cs" />
+    <Compile Remove="AntonAndDanik.cs" />
     <Compile Remove="BearAndBigBrother.cs" />
     <Compile Remove="BeautifulMatrix.cs" />
     <Compile Remove="Bit.cs" />
