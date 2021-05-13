@@ -14,6 +14,7 @@
     <Compile Remove="AntonAndDanik.cs" />
     <Compile Remove="BearAndBigBrother.cs" />
     <Compile Remove="BeautifulMatrix.cs" />
+    <Compile Remove="BeautifulYear.cs" />
     <Compile Remove="Bit.cs" />
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="ChatRoom.cs" />
