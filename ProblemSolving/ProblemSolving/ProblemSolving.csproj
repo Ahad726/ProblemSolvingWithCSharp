@@ -35,6 +35,7 @@
     <Compile Remove="Tram.cs" />
     <Compile Remove="Translation.cs" />
     <Compile Remove="Twins.cs" />
+    <Compile Remove="VanyaAndFence.cs" />
     <Compile Remove="VanyaAndLanterns.cs" />
     <Compile Remove="Watermelon.cs" />
     <Compile Remove="WayTooLongWords.cs" />
