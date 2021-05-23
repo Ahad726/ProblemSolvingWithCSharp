@@ -29,6 +29,7 @@
     <Compile Remove="NextRound.cs" />
     <Compile Remove="PermutationSort.cs" />
     <Compile Remove="PetyaAndStrings.cs" />
+    <Compile Remove="Potion-making.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
     <Compile Remove="StonesOnTheTable.cs" />
     <Compile Remove="StringTask.cs" />
