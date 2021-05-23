@@ -22,10 +22,12 @@
     <Compile Remove="Elephant.cs" />
     <Compile Remove="Football.cs" />
     <Compile Remove="HelpfulMaths.cs" />
+    <Compile Remove="HQ9.cs" />
     <Compile Remove="IQtest.cs" />
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
+    <Compile Remove="PermutationSort.cs" />
     <Compile Remove="PetyaAndStrings.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
     <Compile Remove="StonesOnTheTable.cs" />
