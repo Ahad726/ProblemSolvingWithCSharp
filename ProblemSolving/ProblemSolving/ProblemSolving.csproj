@@ -21,6 +21,7 @@
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Elephant.cs" />
     <Compile Remove="Football.cs" />
+    <Compile Remove="George_and_Accommodation.cs" />
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="HQ9.cs" />
     <Compile Remove="IQtest.cs" />
