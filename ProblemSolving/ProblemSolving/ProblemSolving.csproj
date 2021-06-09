@@ -21,6 +21,7 @@
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Elephant.cs" />
     <Compile Remove="Football.cs" />
+    <Compile Remove="GameOfLife.cs" />
     <Compile Remove="George_and_Accommodation.cs" />
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="HQ9.cs" />
@@ -28,6 +29,7 @@
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
+    <Compile Remove="OmkarAndBadStory.cs" />
     <Compile Remove="PermutationSort.cs" />
     <Compile Remove="PetyaAndStrings.cs" />
     <Compile Remove="Potion-making.cs" />
