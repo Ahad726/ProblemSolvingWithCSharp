@@ -27,6 +27,7 @@
     <Compile Remove="HQ9.cs" />
     <Compile Remove="IQtest.cs" />
     <Compile Remove="LuckyDivision.cs" />
+    <Compile Remove="Magnets.cs" />
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
     <Compile Remove="OmkarAndBadStory.cs" />
