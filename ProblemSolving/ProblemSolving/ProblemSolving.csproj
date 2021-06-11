@@ -36,6 +36,7 @@
     <Compile Remove="PetyaAndStrings.cs" />
     <Compile Remove="Potion-making.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
+    <Compile Remove="StoneGame.cs" />
     <Compile Remove="StonesOnTheTable.cs" />
     <Compile Remove="StringTask.cs" />
     <Compile Remove="Team.cs" />
