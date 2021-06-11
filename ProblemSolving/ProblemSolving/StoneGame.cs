@@ -16,9 +16,18 @@ namespace ProblemSolving
                 var arraySize = Convert.ToInt32(Console.ReadLine());
                 var stonArray = Console.ReadLine().Split(' ').Take(arraySize).Select(int.Parse).ToArray();
 
+
+                if (stonArray.Length == 2)
+                {
+                    Console.WriteLine(2);
+                    continue;
+                }
+
                 int min = stonArray.Min();
                 int max = stonArray.Max();
 
+
+                //  left and right
                 int leftMatch = 0;
                 for (int a = 0; a < stonArray.Length; a++)
                 {
@@ -30,7 +39,7 @@ namespace ProblemSolving
                 }
 
                 int rightmatch = 0;
-                for (int b = stonArray.Length-1; b > 0; b--)
+                for (int b = stonArray.Length - 1; b > 0; b--)
                 {
                     rightmatch++;
                     if (stonArray[b] == max || stonArray[b] == min)
@@ -39,92 +48,49 @@ namespace ProblemSolving
                     }
                 }
 
-                if (leftMatch <= rightmatch)
+                int leftRightMatch = leftMatch + rightmatch;
+
+
+                // from left side
+                int fromLeftMatch = 0;
+                int i = 0;
+                for (; i < stonArray.Length; i++)
                 {
-                    int i = 0;
-
-                    for (; i < stonArray.Length; i++)
+                    if (stonArray[i] == max || stonArray[i] == min)
                     {
-                        if (stonArray[i] == max || stonArray[i] == min)
+                        fromLeftMatch++;
+                        if (fromLeftMatch == 2)
                         {
                             break;
                         }
                     }
-
-                    int j = i + 1;
-                    int stepCountAfterLeftMatch = 0;
-                    for (; j < stonArray.Length; j++)
-                    {
-                        stepCountAfterLeftMatch++;
-                        if (stonArray[j] == max || stonArray[j] == min)
-                        {
-                            break;
-                        }
-                    }
-
-                    int rightCount = 0;
-                    for (int m = stonArray.Length - 1; m > i; m--)
-                    {
-                        rightCount++;
-                        if (stonArray[m] == max || stonArray[m] == min)
-                        {
-                            break;
-                        }
-                    }
-
-
-
-                    int seconMatch = Math.Min(stepCountAfterLeftMatch, rightCount);
-
-                    int result = i + 1 + seconMatch;
-
-                    Console.WriteLine(result);
                 }
 
-                else
+                int leftCount = i + 1;
+
+
+                // from right side
+                int fromRightMatch = 0;
+                int rightCount = 0;
+                int j = stonArray.Length - 1;
+                for (; j > 0; j--)
                 {
-
-                    int i = stonArray.Length - 1;
-                    int rightCount = 0;
-
-                    for (; i >= 0; i--)
+                    rightCount++;
+                    if (stonArray[j] == max || stonArray[j] == min)
                     {
-                        rightCount++;
-                        if (stonArray[i] == max || stonArray[i] == min)
+                        fromRightMatch++;
+                        if (fromRightMatch == 2)
                         {
                             break;
                         }
                     }
-
-                    int j = i -1 ;
-                    int stepCountrightMatchToLeft = 0;
-                    for (; j >= 0; j--)
-                    {
-                        stepCountrightMatchToLeft++;
-                        if (stonArray[j] == max || stonArray[j] == min)
-                        {
-                            break;
-                        }
-                    }
-
-                    int leftmatch = 0;
-
-                    for (int m = 0; m < i; m++)
-                    {
-                        leftmatch++;
-                        if (stonArray[m] == max || stonArray[m] == min)
-                        {
-                            break;
-                        }
-                    }
-
-                    int seconMatch = Math.Min(stepCountrightMatchToLeft, leftmatch);
-
-                    int result = rightCount + seconMatch;
-
-                    Console.WriteLine(result);
-
                 }
+
+                int result = Math.Min(Math.Min(leftCount, rightCount), leftRightMatch);
+                Console.WriteLine(result);
+
+
+
 
             }
         }
