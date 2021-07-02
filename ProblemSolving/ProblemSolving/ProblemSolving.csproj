@@ -21,6 +21,7 @@
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
+    <Compile Remove="EvenOdds.cs" />
     <Compile Remove="Football.cs" />
     <Compile Remove="FriendsAndCandies.cs" />
     <Compile Remove="GameOfLife.cs" />
