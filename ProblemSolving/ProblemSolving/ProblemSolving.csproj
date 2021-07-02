@@ -32,6 +32,7 @@
     <Compile Remove="IQtest.cs" />
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="Magnets.cs" />
+    <Compile Remove="Maximum_Production.cs" />
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
     <Compile Remove="NumberOfPairs.cs" />
@@ -39,6 +40,7 @@
     <Compile Remove="PermutationSort.cs" />
     <Compile Remove="PetyaAndStrings.cs" />
     <Compile Remove="Potion-making.cs" />
+    <Compile Remove="Relativity.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
     <Compile Remove="StoneGame.cs" />
     <Compile Remove="StonesOnTheTable.cs" />
