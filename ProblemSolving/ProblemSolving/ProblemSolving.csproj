@@ -12,6 +12,7 @@
   <ItemGroup>
     <Compile Remove="AddTwoNumbers .cs" />
     <Compile Remove="AntonAndDanik.cs" />
+    <Compile Remove="BackTrackingPermutation.cs" />
     <Compile Remove="BearAndBigBrother.cs" />
     <Compile Remove="BeautifulMatrix.cs" />
     <Compile Remove="BeautifulYear.cs" />
