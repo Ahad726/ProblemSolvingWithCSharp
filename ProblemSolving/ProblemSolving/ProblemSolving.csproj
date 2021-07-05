@@ -37,6 +37,7 @@
     <Compile Remove="NextRound.cs" />
     <Compile Remove="NumberOfPairs.cs" />
     <Compile Remove="OmkarAndBadStory.cs" />
+    <Compile Remove="OptimalDenomination.cs" />
     <Compile Remove="PermutationSort.cs" />
     <Compile Remove="PetyaAndStrings.cs" />
     <Compile Remove="Potion-making.cs" />
