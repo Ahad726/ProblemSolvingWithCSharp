@@ -15,67 +15,48 @@ namespace ProblemSolving
             {
                 var totalEmp = Convert.ToInt32(Console.ReadLine());
                 var salaryArray = Console.ReadLine().Split(' ').Take(totalEmp).Select(int.Parse).ToArray();
-                var min = salaryArray.Min();
-                var max = salaryArray.Max();
 
-                bool havingOdd = false;
+                int gcdValue = 0;
 
-                foreach (var s in salaryArray)
+                for (int j = 0; j < salaryArray.Length; j++)
                 {
-                    if (s % 2 != 0)
+                    gcdValue = GCD(gcdValue, salaryArray[j]);
+                }
+
+                var arraymax = salaryArray.Max();
+
+                for (int k = 0; k < salaryArray.Length; k++)
+                {
+                    if (salaryArray[k] == arraymax)
                     {
-                        havingOdd = true;
+                        salaryArray[k] = gcdValue;
                     }
                 }
-                Array.Sort(salaryArray);
 
-                if (havingOdd)
+                int noteCount = 0;
+                foreach (var item in salaryArray)
                 {
-                    for (int j = salaryArray.Length - 1; j >= 0; j--)
-                    {
-                        if (salaryArray[j] == max)
-                        {
-                            salaryArray[j] = 1;
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    }
+                    noteCount += item / gcdValue;
+                }
 
-                    int count = 0;
-                    foreach (var s in salaryArray)
-                    {
-                        count += s / 1;
-                    }
+                Console.WriteLine(noteCount);
+            }
+        }
 
-                    Console.WriteLine(count);
+        static int GCD(int nmbr1, int nmbr2)
+        {
+            while (nmbr1 > 0 && nmbr2 > 0)
+            {
+                if (nmbr1 >= nmbr2 )
+                {
+                    nmbr1 %= nmbr2;
                 }
                 else
                 {
-                    for (int j = salaryArray.Length - 1; j >= 0; j--)
-                    {
-                        if (salaryArray[j] == max)
-                        {
-                            salaryArray[j] = min;
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    }
-
-                    int count = 0;
-                    foreach (var s in salaryArray)
-                    {
-                        count += s / min;
-                    }
-
-                    Console.WriteLine(count);
+                    nmbr2 %= nmbr1;
                 }
-
-              
             }
+            return Math.Max(nmbr1, nmbr2);
         }
     }
 }

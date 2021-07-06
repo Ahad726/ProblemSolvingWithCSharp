@@ -36,6 +36,7 @@
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
     <Compile Remove="NumberOfPairs.cs" />
+    <Compile Remove="OddSet.cs" />
     <Compile Remove="OmkarAndBadStory.cs" />
     <Compile Remove="OptimalDenomination.cs" />
     <Compile Remove="PermutationSort.cs" />
