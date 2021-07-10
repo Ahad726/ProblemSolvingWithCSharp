@@ -12,6 +12,7 @@
   <ItemGroup>
     <Compile Remove="AddTwoNumbers .cs" />
     <Compile Remove="AntonAndDanik.cs" />
+    <Compile Remove="ArrayStabilization%28GCD_version%29.cs" />
     <Compile Remove="BackTrackingPermutation.cs" />
     <Compile Remove="BearAndBigBrother.cs" />
     <Compile Remove="BeautifulMatrix.cs" />
@@ -23,6 +24,8 @@
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
     <Compile Remove="EvenOdds.cs" />
+    <Compile Remove="ExcitingBets.cs" />
+    <Compile Remove="Extend_Euclidean_Algorithm.cs" />
     <Compile Remove="Football.cs" />
     <Compile Remove="FriendsAndCandies.cs" />
     <Compile Remove="GameOfLife.cs" />
