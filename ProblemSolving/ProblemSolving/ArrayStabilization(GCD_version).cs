@@ -20,22 +20,43 @@ namespace ProblemSolving
                 var nmbrArray = Console.ReadLine().Split(' ').Take(arrayLength).Select(int.Parse).ToArray();
 
                 int count = 0;
-                while (!IsAllEqual(nmbrArray))
+                var sameNmbrCount = 0;
+
+                while (sameNmbrCount != nmbrArray.Length)
                 {
                     var firstElement = nmbrArray[0];
+
+                    var initialGcd = GCD(nmbrArray[0], nmbrArray[1]);
+
+                    sameNmbrCount = 0;
+
                     for (int j = 0; j < arrayLength-1; j++)
                     {
                         var gcd = GCD(nmbrArray[j], nmbrArray[j + 1]);
+
+                        if (nmbrArray[j] == gcd && nmbrArray[j+1] == gcd)
+                        {
+                            sameNmbrCount++;
+                        }
+
                         nmbrArray[j] = gcd;
                         if (j == arrayLength-2)
                         {
-                            // j indicates the 2nd last. hence calculate the last and the first
-                            nmbrArray[j + 1] = GCD(nmbrArray[j + 1], firstElement);
+                            // j indicavar inititaltes the 2nd last. hence calculate the last and the first
+                             var lastNmbrgcd = GCD(nmbrArray[j + 1], firstElement);
+                            nmbrArray[j + 1] = lastNmbrgcd;
+                            if (nmbrArray[j] == gcd && nmbrArray[j + 1] == gcd)
+                            {
+                                sameNmbrCount++;
+                            }
                         }
+                    }
+                    if (sameNmbrCount == nmbrArray.Length)
+                    {
+                        break;
                     }
                     count++;
                 }
-
 
                 Console.WriteLine(count);
             }
@@ -55,25 +76,6 @@ namespace ProblemSolving
                 }
             }
             return Math.Max(a, b);
-        }
-
-        static bool IsAllEqual(int[] nmbrArray)
-        {
-            var firstItem = nmbrArray[0];
-
-            var result =  Array.TrueForAll(nmbrArray, c => c == firstItem);
-
-            //bool result = true;
-
-            //foreach (var nmbr in nmbrArray)
-            //{
-            //    if (nmbr != firstItem)
-            //    {
-            //        result = false;
-            //    }
-            //}
-
-            return result;
         }
     }
 }
