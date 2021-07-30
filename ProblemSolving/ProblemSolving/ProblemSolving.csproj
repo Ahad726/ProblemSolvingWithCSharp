@@ -21,6 +21,7 @@
     <Compile Remove="Bit.cs" />
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="ChatRoom.cs" />
+    <Compile Remove="Cherry.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
