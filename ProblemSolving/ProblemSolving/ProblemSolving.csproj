@@ -12,6 +12,7 @@
   <ItemGroup>
     <Compile Remove="AddTwoNumbers .cs" />
     <Compile Remove="AntonAndDanik.cs" />
+    <Compile Remove="AquaMoon_and_Two Arrays.cs" />
     <Compile Remove="ArrayStabilization%28GCD_version%29.cs" />
     <Compile Remove="BackTrackingPermutation.cs" />
     <Compile Remove="BearAndBigBrother.cs" />
@@ -63,6 +64,7 @@
     <Compile Remove="Word.cs" />
     <Compile Remove="WordCapitalization.cs" />
     <Compile Remove="WrongSubtraction.cs" />
+    <Compile Remove="XxOoRr.cs" />
     <Compile Remove="YoungPhysicist.cs" />
   </ItemGroup>
 
