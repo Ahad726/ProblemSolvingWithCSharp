@@ -23,7 +23,9 @@
     <Compile Remove="ChatRoom.cs" />
     <Compile Remove="Cherry.cs" />
     <Compile Remove="Codechef\ChefAndSpells.cs" />
+    <Compile Remove="Codechef\Maximum_Production.cs" />
     <Compile Remove="Codechef\RedAlert.cs" />
+    <Compile Remove="Codechef\Relativity.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
@@ -34,6 +36,7 @@
     <Compile Remove="FriendsAndCandies.cs" />
     <Compile Remove="GameOfLife.cs" />
     <Compile Remove="George_and_Accommodation.cs" />
+    <Compile Remove="Gregor_and_Pawn_Game.cs" />
     <Compile Remove="Gregor_Cryptography.cs" />
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="HQ9.cs" />
@@ -72,10 +75,6 @@
     <Compile Remove="WrongSubtraction.cs" />
     <Compile Remove="XxOoRr.cs" />
     <Compile Remove="YoungPhysicist.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Codechef\" />
   </ItemGroup>
 
 </Project>
