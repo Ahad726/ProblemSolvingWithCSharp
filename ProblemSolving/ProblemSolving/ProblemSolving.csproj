@@ -22,6 +22,8 @@
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="ChatRoom.cs" />
     <Compile Remove="Cherry.cs" />
+    <Compile Remove="Codechef\ChefAndSpells.cs" />
+    <Compile Remove="Codechef\RedAlert.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
@@ -32,6 +34,7 @@
     <Compile Remove="FriendsAndCandies.cs" />
     <Compile Remove="GameOfLife.cs" />
     <Compile Remove="George_and_Accommodation.cs" />
+    <Compile Remove="Gregor_Cryptography.cs" />
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="HQ9.cs" />
     <Compile Remove="IQtest.cs" />
@@ -46,6 +49,7 @@
     <Compile Remove="OptimalDenomination.cs" />
     <Compile Remove="PermutationSort.cs" />
     <Compile Remove="PetyaAndStrings.cs" />
+    <Compile Remove="PizzaForces.cs" />
     <Compile Remove="Potion-making.cs" />
     <Compile Remove="Relativity.cs" />
     <Compile Remove="ShortestPathwithObstacle.cs" />
@@ -58,6 +62,7 @@
     <Compile Remove="Tram.cs" />
     <Compile Remove="Translation.cs" />
     <Compile Remove="Twins.cs" />
+    <Compile Remove="TwoTables.cs" />
     <Compile Remove="VanyaAndFence.cs" />
     <Compile Remove="VanyaAndLanterns.cs" />
     <Compile Remove="Watermelon.cs" />
@@ -67,6 +72,10 @@
     <Compile Remove="WrongSubtraction.cs" />
     <Compile Remove="XxOoRr.cs" />
     <Compile Remove="YoungPhysicist.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Codechef\" />
   </ItemGroup>
 
 </Project>
