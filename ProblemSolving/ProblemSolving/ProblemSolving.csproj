@@ -11,6 +11,9 @@
 
   <ItemGroup>
     <Compile Remove="AddTwoNumbers .cs" />
+    <Compile Remove="Algo\Number Theory\BinaryExponentiation.cs" />
+    <Compile Remove="Algo\Number Theory\Extend_Euclidean_Algorithm.cs" />
+    <Compile Remove="Algo\Number Theory\PrimalityTest.cs" />
     <Compile Remove="AntonAndDanik.cs" />
     <Compile Remove="AquaMoon_and_Two Arrays.cs" />
     <Compile Remove="ArrayStabilization%28GCD_version%29.cs" />
@@ -22,6 +25,7 @@
     <Compile Remove="BoyOrGirl.cs" />
     <Compile Remove="ChatRoom.cs" />
     <Compile Remove="Cherry.cs" />
+    <Compile Remove="Codechef\BeautifulPair.cs" />
     <Compile Remove="Codechef\ChefAndSpells.cs" />
     <Compile Remove="Codechef\Maximum_Production.cs" />
     <Compile Remove="Codechef\RedAlert.cs" />
@@ -75,6 +79,10 @@
     <Compile Remove="WrongSubtraction.cs" />
     <Compile Remove="XxOoRr.cs" />
     <Compile Remove="YoungPhysicist.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Algo\Number Theory\" />
   </ItemGroup>
 
 </Project>
