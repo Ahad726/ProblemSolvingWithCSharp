@@ -27,7 +27,11 @@
     <Compile Remove="Cherry.cs" />
     <Compile Remove="Codechef\BeautifulPair.cs" />
     <Compile Remove="Codechef\ChefAndSpells.cs" />
+    <Compile Remove="Codechef\Chef_and_Bulb_Invention.cs" />
     <Compile Remove="Codechef\Maximum_Production.cs" />
+    <Compile Remove="Codechef\OlympicsRanking.cs" />
+    <Compile Remove="Codechef\Primality_Test.cs" />
+    <Compile Remove="Codechef\ProblemDifficulties.cs" />
     <Compile Remove="Codechef\RedAlert.cs" />
     <Compile Remove="Codechef\Relativity.cs" />
     <Compile Remove="DominoPiling.cs" />
@@ -58,9 +62,11 @@
     <Compile Remove="PetyaAndStrings.cs" />
     <Compile Remove="PizzaForces.cs" />
     <Compile Remove="Potion-making.cs" />
+    <Compile Remove="Problem_A.cs" />
     <Compile Remove="Relativity.cs" />
     <Compile Remove="ShortestPathwithObstacle.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
+    <Compile Remove="Spoj\Finding_Kth_ Prime.cs" />
     <Compile Remove="StoneGame.cs" />
     <Compile Remove="StonesOnTheTable.cs" />
     <Compile Remove="StringTask.cs" />
@@ -82,7 +88,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Algo\Number Theory\" />
+    <Folder Include="Codechef\" />
+    <Folder Include="Spoj\" />
   </ItemGroup>
 
 </Project>
