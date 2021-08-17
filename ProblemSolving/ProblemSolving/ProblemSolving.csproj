@@ -14,6 +14,8 @@
     <Compile Remove="Algo\Number Theory\BinaryExponentiation.cs" />
     <Compile Remove="Algo\Number Theory\Extend_Euclidean_Algorithm.cs" />
     <Compile Remove="Algo\Number Theory\PrimalityTest.cs" />
+    <Compile Remove="Algo\Number Theory\SegmentedSieve.cs" />
+    <Compile Remove="Algo\Number Theory\Sieve_of_Eratosthenes.cs" />
     <Compile Remove="AntonAndDanik.cs" />
     <Compile Remove="AquaMoon_and_Two Arrays.cs" />
     <Compile Remove="ArrayStabilization%28GCD_version%29.cs" />
@@ -52,6 +54,7 @@
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="Magnets.cs" />
     <Compile Remove="Maximum_Production.cs" />
+    <Compile Remove="Mocha_and_Red_and_Blue.cs" />
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
     <Compile Remove="NumberOfPairs.cs" />
@@ -88,6 +91,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Algo\Number Theory\" />
     <Folder Include="Codechef\" />
     <Folder Include="Spoj\" />
   </ItemGroup>
