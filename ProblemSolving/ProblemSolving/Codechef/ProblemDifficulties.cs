@@ -14,32 +14,39 @@ namespace ProblemSolving.Codechef
             for (int tstCase = 0; tstCase < t; tstCase++)
             {
                 var nmbrArray = Console.ReadLine().Split(' ').Take(4).Select(int.Parse).ToArray();
-                var distnctList = new List<int>();
+                var nmbrDict = new Dictionary<int,int>();
 
                 foreach (var nmbr in nmbrArray)
                 {
-                    if (!distnctList.Contains(nmbr))
+                    if (!nmbrDict.ContainsKey(nmbr))
                     {
-                        distnctList.Add(nmbr);
+                        nmbrDict.Add(nmbr, 0);
                     }
+                    nmbrDict[nmbr] += 1;
                 }
 
-                var l = distnctList.Count;
-                
-                if(l == 2)
-                {
-                    Console.WriteLine(1);
-                }
-                else if( l > 2)
+                var dictSize = nmbrDict.Count;
+
+                if (dictSize == 3 || dictSize == 4)
                 {
                     Console.WriteLine(2);
+                }
+                else if(dictSize == 2)
+                {
+                    if(nmbrDict.ElementAt(0).Value == 2)
+                    {
+                        Console.WriteLine(2);
+                    }
+                    else
+                    {
+                        Console.WriteLine(1);
+                    }
                 }
                 else
                 {
                     Console.WriteLine(0);
                 }
-                
-                
+
             }
         }
     }

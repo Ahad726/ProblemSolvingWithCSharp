@@ -28,14 +28,19 @@
     <Compile Remove="ChatRoom.cs" />
     <Compile Remove="Cherry.cs" />
     <Compile Remove="Codechef\BeautifulPair.cs" />
+    <Compile Remove="Codechef\Blackcells_chessboard.cs" />
+    <Compile Remove="Codechef\Bus_full_passengers.cs" />
     <Compile Remove="Codechef\ChefAndSpells.cs" />
     <Compile Remove="Codechef\Chef_and_Bulb_Invention.cs" />
+    <Compile Remove="Codechef\FriendGroupsLine.cs" />
+    <Compile Remove="Codechef\LargeSquare.cs" />
     <Compile Remove="Codechef\Maximum_Production.cs" />
     <Compile Remove="Codechef\OlympicsRanking.cs" />
     <Compile Remove="Codechef\Primality_Test.cs" />
     <Compile Remove="Codechef\ProblemDifficulties.cs" />
     <Compile Remove="Codechef\RedAlert.cs" />
     <Compile Remove="Codechef\Relativity.cs" />
+    <Compile Remove="DislikeThrees.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
@@ -54,6 +59,7 @@
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="Magnets.cs" />
     <Compile Remove="Maximum_Production.cs" />
+    <Compile Remove="Mocha_And_Math.cs" />
     <Compile Remove="Mocha_and_Red_and_Blue.cs" />
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
