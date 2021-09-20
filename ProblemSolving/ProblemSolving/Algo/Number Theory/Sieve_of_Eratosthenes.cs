@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProblemSolving.Algo.Number_Theory
 {
-    class Sieve_of_Eratosthenes  // Prime Generator
+    class Sieve_of_Eratosthenes  // Prime Generator 1 to n 
     {
         static void Main(string[] args)
         {

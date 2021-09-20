@@ -12,13 +12,17 @@
   <ItemGroup>
     <Compile Remove="AddTwoNumbers .cs" />
     <Compile Remove="Algo\Number Theory\BinaryExponentiation.cs" />
+    <Compile Remove="Algo\Number Theory\Divisor.cs" />
     <Compile Remove="Algo\Number Theory\Extend_Euclidean_Algorithm.cs" />
     <Compile Remove="Algo\Number Theory\PrimalityTest.cs" />
+    <Compile Remove="Algo\Number Theory\PrimeFactorization.cs" />
     <Compile Remove="Algo\Number Theory\SegmentedSieve.cs" />
     <Compile Remove="Algo\Number Theory\Sieve_of_Eratosthenes.cs" />
+    <Compile Remove="AlmostPrime.cs" />
     <Compile Remove="AntonAndDanik.cs" />
     <Compile Remove="AquaMoon_and_Two Arrays.cs" />
     <Compile Remove="ArrayStabilization%28GCD_version%29.cs" />
+    <Compile Remove="A_Variety_Operations.cs" />
     <Compile Remove="BackTrackingPermutation.cs" />
     <Compile Remove="BearAndBigBrother.cs" />
     <Compile Remove="BeautifulMatrix.cs" />
@@ -33,6 +37,7 @@
     <Compile Remove="Codechef\ChefAndSpells.cs" />
     <Compile Remove="Codechef\Chef_and_Bulb_Invention.cs" />
     <Compile Remove="Codechef\FriendGroupsLine.cs" />
+    <Compile Remove="Codechef\INCREASING_SEQUENCE.cs" />
     <Compile Remove="Codechef\LargeSquare.cs" />
     <Compile Remove="Codechef\Maximum_Production.cs" />
     <Compile Remove="Codechef\OlympicsRanking.cs" />
@@ -42,6 +47,7 @@
     <Compile Remove="Codechef\Relativity.cs" />
     <Compile Remove="DislikeThrees.cs" />
     <Compile Remove="DominoPiling.cs" />
+    <Compile Remove="Domino_Disaster.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
     <Compile Remove="EvenOdds.cs" />
@@ -63,6 +69,7 @@
     <Compile Remove="Mocha_and_Red_and_Blue.cs" />
     <Compile Remove="NearlyLuckyNumber.cs" />
     <Compile Remove="NextRound.cs" />
+    <Compile Remove="NoldbachProblem.cs" />
     <Compile Remove="NumberOfPairs.cs" />
     <Compile Remove="OddSet.cs" />
     <Compile Remove="OmkarAndBadStory.cs" />
@@ -72,15 +79,22 @@
     <Compile Remove="PizzaForces.cs" />
     <Compile Remove="Potion-making.cs" />
     <Compile Remove="Problem_A.cs" />
+    <Compile Remove="Regular_Bracket_Sequences.cs" />
     <Compile Remove="Relativity.cs" />
+    <Compile Remove="ScenesFromMemory.cs" />
     <Compile Remove="ShortestPathwithObstacle.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
     <Compile Remove="Spoj\Finding_Kth_ Prime.cs" />
     <Compile Remove="StoneGame.cs" />
     <Compile Remove="StonesOnTheTable.cs" />
     <Compile Remove="StringTask.cs" />
+    <Compile Remove="Take_Your_Places.cs" />
     <Compile Remove="Team.cs" />
     <Compile Remove="TheatreSquare.cs" />
+    <Compile Remove="The_Miracle_ and_Sleeper.cs" />
+    <Compile Remove="Toph\KoduAverageNumber.cs" />
+    <Compile Remove="Toph\N-thPrime.cs" />
+    <Compile Remove="Toph\UniqueString.cs" />
     <Compile Remove="Tram.cs" />
     <Compile Remove="Translation.cs" />
     <Compile Remove="Twins.cs" />
@@ -89,6 +103,7 @@
     <Compile Remove="VanyaAndLanterns.cs" />
     <Compile Remove="Watermelon.cs" />
     <Compile Remove="WayTooLongWords.cs" />
+    <Compile Remove="Who_Opposite.cs" />
     <Compile Remove="Word.cs" />
     <Compile Remove="WordCapitalization.cs" />
     <Compile Remove="WrongSubtraction.cs" />
@@ -100,6 +115,7 @@
     <Folder Include="Algo\Number Theory\" />
     <Folder Include="Codechef\" />
     <Folder Include="Spoj\" />
+    <Folder Include="Toph\" />
   </ItemGroup>
 
 </Project>
