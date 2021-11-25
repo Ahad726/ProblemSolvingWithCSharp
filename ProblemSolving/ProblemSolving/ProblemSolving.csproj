@@ -49,6 +49,7 @@
     <Compile Remove="Codechef\ProblemDifficulties.cs" />
     <Compile Remove="Codechef\RedAlert.cs" />
     <Compile Remove="Codechef\Relativity.cs" />
+    <Compile Remove="Codeforces\Make_Even.cs" />
     <Compile Remove="DislikeThrees.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Domino_Disaster.cs" />
