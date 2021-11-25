@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AB_Balance.cs" />
     <Compile Remove="AddTwoNumbers .cs" />
     <Compile Remove="Algo\Number Theory\BinaryExponentiation.cs" />
     <Compile Remove="Algo\Number Theory\Divisor.cs" />
@@ -18,10 +19,13 @@
     <Compile Remove="Algo\Number Theory\PrimeFactorization.cs" />
     <Compile Remove="Algo\Number Theory\SegmentedSieve.cs" />
     <Compile Remove="Algo\Number Theory\Sieve_of_Eratosthenes.cs" />
+    <Compile Remove="Algo\Searching\BinarySearch.cs" />
+    <Compile Remove="Algo\Searching\OrderAgnosticBS.cs" />
     <Compile Remove="AlmostPrime.cs" />
     <Compile Remove="AntonAndDanik.cs" />
     <Compile Remove="AquaMoon_and_Two Arrays.cs" />
     <Compile Remove="ArrayStabilization%28GCD_version%29.cs" />
+    <Compile Remove="A_M_Deviation.cs" />
     <Compile Remove="A_Variety_Operations.cs" />
     <Compile Remove="BackTrackingPermutation.cs" />
     <Compile Remove="BearAndBigBrother.cs" />
@@ -72,6 +76,7 @@
     <Compile Remove="NoldbachProblem.cs" />
     <Compile Remove="NumberOfPairs.cs" />
     <Compile Remove="OddSet.cs" />
+    <Compile Remove="Odd_Grasshopper.cs" />
     <Compile Remove="OmkarAndBadStory.cs" />
     <Compile Remove="OptimalDenomination.cs" />
     <Compile Remove="PermutationSort.cs" />
@@ -81,8 +86,10 @@
     <Compile Remove="Problem_A.cs" />
     <Compile Remove="Regular_Bracket_Sequences.cs" />
     <Compile Remove="Relativity.cs" />
+    <Compile Remove="Reverse_Sort.cs" />
     <Compile Remove="ScenesFromMemory.cs" />
     <Compile Remove="ShortestPathwithObstacle.cs" />
+    <Compile Remove="Slay_the_Dragon.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
     <Compile Remove="Spoj\Finding_Kth_ Prime.cs" />
     <Compile Remove="StoneGame.cs" />
@@ -92,13 +99,11 @@
     <Compile Remove="Team.cs" />
     <Compile Remove="TheatreSquare.cs" />
     <Compile Remove="The_Miracle_ and_Sleeper.cs" />
-    <Compile Remove="Toph\KoduAverageNumber.cs" />
-    <Compile Remove="Toph\N-thPrime.cs" />
-    <Compile Remove="Toph\UniqueString.cs" />
     <Compile Remove="Tram.cs" />
     <Compile Remove="Translation.cs" />
     <Compile Remove="Twins.cs" />
     <Compile Remove="TwoTables.cs" />
+    <Compile Remove="Update_Files.cs" />
     <Compile Remove="VanyaAndFence.cs" />
     <Compile Remove="VanyaAndLanterns.cs" />
     <Compile Remove="Watermelon.cs" />
@@ -113,9 +118,9 @@
 
   <ItemGroup>
     <Folder Include="Algo\Number Theory\" />
+    <Folder Include="Algo\Searching\" />
     <Folder Include="Codechef\" />
     <Folder Include="Spoj\" />
-    <Folder Include="Toph\" />
   </ItemGroup>
 
 </Project>
