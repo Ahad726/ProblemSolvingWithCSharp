@@ -49,7 +49,12 @@
     <Compile Remove="Codechef\ProblemDifficulties.cs" />
     <Compile Remove="Codechef\RedAlert.cs" />
     <Compile Remove="Codechef\Relativity.cs" />
+    <Compile Remove="Codeforces\ArrayEversion.cs" />
+    <Compile Remove="Codeforces\Divan_And_Store.cs" />
+    <Compile Remove="Codeforces\Life_of_Flower.cs" />
+    <Compile Remove="Codeforces\LongComparison.cs" />
     <Compile Remove="Codeforces\Make_Even.cs" />
+    <Compile Remove="Codeforces\Team_Composition.cs" />
     <Compile Remove="DislikeThrees.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Domino_Disaster.cs" />
@@ -67,6 +72,7 @@
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="HQ9.cs" />
     <Compile Remove="IQtest.cs" />
+    <Compile Remove="LeetCode\Ceiling_sorted_array.cs" />
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="Magnets.cs" />
     <Compile Remove="Maximum_Production.cs" />
@@ -92,7 +98,6 @@
     <Compile Remove="ShortestPathwithObstacle.cs" />
     <Compile Remove="Slay_the_Dragon.cs" />
     <Compile Remove="SoldierAndBananas.cs" />
-    <Compile Remove="Spoj\Finding_Kth_ Prime.cs" />
     <Compile Remove="StoneGame.cs" />
     <Compile Remove="StonesOnTheTable.cs" />
     <Compile Remove="StringTask.cs" />
@@ -121,7 +126,7 @@
     <Folder Include="Algo\Number Theory\" />
     <Folder Include="Algo\Searching\" />
     <Folder Include="Codechef\" />
-    <Folder Include="Spoj\" />
+    <Folder Include="LeetCode\" />
   </ItemGroup>
 
 </Project>
