@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -152,6 +152,8 @@
     <Compile Remove="HQ9.cs" />
     <Compile Remove="IQtest.cs" />
     <Compile Remove="LeetCode\Ceiling_sorted_array.cs" />
+    <Compile Remove="LeetCode\FindFirstAndLast.cs" />
+    <Compile Remove="LeetCode\FindSmallestGreaterThanTarget.cs" />
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="Magnets.cs" />
     <Compile Remove="Maximum_Production.cs" />
