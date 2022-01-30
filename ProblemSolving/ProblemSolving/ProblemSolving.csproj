@@ -153,7 +153,13 @@
     <Compile Remove="IQtest.cs" />
     <Compile Remove="LeetCode\Ceiling_sorted_array.cs" />
     <Compile Remove="LeetCode\FindFirstAndLast.cs" />
+    <Compile Remove="LeetCode\FindInMountain.cs" />
+    <Compile Remove="LeetCode\FindMinimum_in_Rotated_Sorted.cs" />
+    <Compile Remove="LeetCode\FindPositionInfiniteArray.cs" />
     <Compile Remove="LeetCode\FindSmallestGreaterThanTarget.cs" />
+    <Compile Remove="LeetCode\PeakIndex.cs" />
+    <Compile Remove="LeetCode\RotatedSortedArray.cs" />
+    <Compile Remove="LeetCode\RotatedSortedArray2.cs" />
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="Magnets.cs" />
     <Compile Remove="Maximum_Production.cs" />
