@@ -21,6 +21,10 @@
     <Compile Remove="Algo\Number Theory\Sieve_of_Eratosthenes.cs" />
     <Compile Remove="Algo\Searching\BinarySearch.cs" />
     <Compile Remove="Algo\Searching\OrderAgnosticBS.cs" />
+    <Compile Remove="Algo\Searching\SearchIn2DArray.cs" />
+    <Compile Remove="Algo\Sorting\BubbleSort.cs" />
+    <Compile Remove="Algo\Sorting\InsertionSort.cs" />
+    <Compile Remove="Algo\Sorting\SelectionSort.cs" />
     <Compile Remove="AlmostPrime.cs" />
     <Compile Remove="AntonAndDanik.cs" />
     <Compile Remove="AquaMoon_and_Two Arrays.cs" />
@@ -160,6 +164,7 @@
     <Compile Remove="LeetCode\PeakIndex.cs" />
     <Compile Remove="LeetCode\RotatedSortedArray.cs" />
     <Compile Remove="LeetCode\RotatedSortedArray2.cs" />
+    <Compile Remove="LeetCode\SplitArrayLargestSum.cs" />
     <Compile Remove="LuckyDivision.cs" />
     <Compile Remove="Magnets.cs" />
     <Compile Remove="Maximum_Production.cs" />
@@ -214,6 +219,7 @@
     <Folder Include="Algo\Searching\" />
     <Folder Include="Codechef\" />
     <Folder Include="Codeforces\" />
+    <Folder Include="LeetCode\" />
   </ItemGroup>
 
 </Project>
