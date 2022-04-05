@@ -35,7 +35,8 @@ namespace ProblemSolving.Algo.Number_Theory
             {
                 if (primeGntr[i] == 0) // if prime 
                 {
-                    for (int j = i * i; j <= n; j+= i)
+                    for (int j = i * i; j <= n; j+= i)      // we are marking from i*i because multiples of i before i*i already marked. if i = 5, then 
+                                                            // 10,15,20 is already marked before coming to i = 5; therefore we start marking from i *i;
                     {
                         primeGntr[j] = 1; // marked as not prime
                     }

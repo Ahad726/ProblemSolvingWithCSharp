@@ -9,7 +9,6 @@ namespace ProblemSolving.Algo.Sorting
         static void Main(string[] args)
         {
             int[] arr = { 5,4,3,2,1};
-
             var sortedArray = Bubble(arr);
 
             Console.WriteLine(String.Join(',', sortedArray));
