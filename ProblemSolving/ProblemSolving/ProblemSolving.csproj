@@ -10,6 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Algo\Sorting\**" />
+    <EmbeddedResource Remove="Algo\Sorting\**" />
+    <None Remove="Algo\Sorting\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="AB_Balance.cs" />
     <Compile Remove="AddTwoNumbers .cs" />
     <Compile Remove="Algo\Bitwise Operator\EvenOdd.cs" />
@@ -20,13 +26,11 @@
     <Compile Remove="Algo\Number Theory\PrimeFactorization.cs" />
     <Compile Remove="Algo\Number Theory\SegmentedSieve.cs" />
     <Compile Remove="Algo\Number Theory\Sieve_of_Eratosthenes.cs" />
+    <Compile Remove="Algo\Recursion\FindAllIndex.cs" />
+    <Compile Remove="Algo\Recursion\RotatedBinarySearch.cs" />
     <Compile Remove="Algo\Searching\BinarySearch.cs" />
     <Compile Remove="Algo\Searching\OrderAgnosticBS.cs" />
     <Compile Remove="Algo\Searching\SearchIn2DArray.cs" />
-    <Compile Remove="Algo\Sorting\BubbleSort.cs" />
-    <Compile Remove="Algo\Sorting\CyclicSort.cs" />
-    <Compile Remove="Algo\Sorting\InsertionSort.cs" />
-    <Compile Remove="Algo\Sorting\SelectionSort.cs" />
     <Compile Remove="AlmostPrime.cs" />
     <Compile Remove="AntonAndDanik.cs" />
     <Compile Remove="AquaMoon_and_Two Arrays.cs" />
@@ -168,6 +172,7 @@
     <Compile Remove="LeetCode\FindTheDuplicate.cs" />
     <Compile Remove="LeetCode\FirstMissingPositive.cs" />
     <Compile Remove="LeetCode\Missing_Number.cs" />
+    <Compile Remove="LeetCode\NumOfStep.cs" />
     <Compile Remove="LeetCode\PalindromeCheck.cs" />
     <Compile Remove="LeetCode\PeakIndex.cs" />
     <Compile Remove="LeetCode\RotatedSortedArray.cs" />
@@ -226,10 +231,10 @@
   <ItemGroup>
     <Folder Include="Algo\Bitwise Operator\" />
     <Folder Include="Algo\Number Theory\" />
-    <Folder Include="Algo\Searching\" />
-    <Folder Include="Algo\Sorting\" />
+    <Folder Include="Algo\Recursion\" />
     <Folder Include="Codechef\" />
     <Folder Include="Codeforces\" />
+    <Folder Include="LeetCode\" />
   </ItemGroup>
 
 </Project>
