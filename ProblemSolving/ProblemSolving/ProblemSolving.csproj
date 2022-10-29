@@ -33,6 +33,7 @@
     <Compile Remove="Algo\Recursion\SkipString.cs" />
     <Compile Remove="Algo\Recursion\Subsequence.cs" />
     <Compile Remove="Algo\Recursion\Subsets.cs" />
+    <Compile Remove="Algo\Recursion\SubsetWithDuplicates.cs" />
     <Compile Remove="Algo\Searching\BinarySearch.cs" />
     <Compile Remove="Algo\Searching\OrderAgnosticBS.cs" />
     <Compile Remove="Algo\Searching\QuickSort.cs" />
