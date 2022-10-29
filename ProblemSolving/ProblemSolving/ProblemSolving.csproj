@@ -28,8 +28,14 @@
     <Compile Remove="Algo\Number Theory\Sieve_of_Eratosthenes.cs" />
     <Compile Remove="Algo\Recursion\FindAllIndex.cs" />
     <Compile Remove="Algo\Recursion\RotatedBinarySearch.cs" />
+    <Compile Remove="Algo\Recursion\skipChar.cs" />
+    <Compile Remove="Algo\Recursion\skipChar2.cs" />
+    <Compile Remove="Algo\Recursion\SkipString.cs" />
+    <Compile Remove="Algo\Recursion\Subsequence.cs" />
+    <Compile Remove="Algo\Recursion\Subsets.cs" />
     <Compile Remove="Algo\Searching\BinarySearch.cs" />
     <Compile Remove="Algo\Searching\OrderAgnosticBS.cs" />
+    <Compile Remove="Algo\Searching\QuickSort.cs" />
     <Compile Remove="Algo\Searching\SearchIn2DArray.cs" />
     <Compile Remove="AlmostPrime.cs" />
     <Compile Remove="AntonAndDanik.cs" />
@@ -123,6 +129,7 @@
     <Compile Remove="Codeforces\SoldierAndBananas.cs" />
     <Compile Remove="Codeforces\StoneGame.cs" />
     <Compile Remove="Codeforces\StonesOnTheTable.cs" />
+    <Compile Remove="Codeforces\StringBuilding.cs" />
     <Compile Remove="Codeforces\StringTask.cs" />
     <Compile Remove="Codeforces\Take_Your_Places.cs" />
     <Compile Remove="Codeforces\Team.cs" />
@@ -231,7 +238,7 @@
   <ItemGroup>
     <Folder Include="Algo\Bitwise Operator\" />
     <Folder Include="Algo\Number Theory\" />
-    <Folder Include="Algo\Recursion\" />
+    <Folder Include="Algo\Searching\" />
     <Folder Include="Codechef\" />
     <Folder Include="Codeforces\" />
     <Folder Include="LeetCode\" />
