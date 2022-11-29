@@ -27,6 +27,7 @@
     <Compile Remove="Algo\Number Theory\SegmentedSieve.cs" />
     <Compile Remove="Algo\Number Theory\Sieve_of_Eratosthenes.cs" />
     <Compile Remove="Algo\Recursion\FindAllIndex.cs" />
+    <Compile Remove="Algo\Recursion\Permutation.cs" />
     <Compile Remove="Algo\Recursion\RotatedBinarySearch.cs" />
     <Compile Remove="Algo\Recursion\skipChar.cs" />
     <Compile Remove="Algo\Recursion\skipChar2.cs" />
@@ -179,6 +180,7 @@
     <Compile Remove="LeetCode\FindSmallestGreaterThanTarget.cs" />
     <Compile Remove="LeetCode\FindTheDuplicate.cs" />
     <Compile Remove="LeetCode\FirstMissingPositive.cs" />
+    <Compile Remove="LeetCode\LetterOfCombination.cs" />
     <Compile Remove="LeetCode\Missing_Number.cs" />
     <Compile Remove="LeetCode\NumOfStep.cs" />
     <Compile Remove="LeetCode\PalindromeCheck.cs" />
