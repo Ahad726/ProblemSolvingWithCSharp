@@ -27,6 +27,7 @@
     <Compile Remove="Algo\Number Theory\SegmentedSieve.cs" />
     <Compile Remove="Algo\Number Theory\Sieve_of_Eratosthenes.cs" />
     <Compile Remove="Algo\Recursion\FindAllIndex.cs" />
+    <Compile Remove="Algo\Recursion\MazeProblem.cs" />
     <Compile Remove="Algo\Recursion\Permutation.cs" />
     <Compile Remove="Algo\Recursion\RotatedBinarySearch.cs" />
     <Compile Remove="Algo\Recursion\skipChar.cs" />
@@ -241,10 +242,10 @@
   <ItemGroup>
     <Folder Include="Algo\Bitwise Operator\" />
     <Folder Include="Algo\Number Theory\" />
+    <Folder Include="Algo\Recursion\" />
     <Folder Include="Algo\Searching\" />
     <Folder Include="Codechef\" />
     <Folder Include="Codeforces\" />
-    <Folder Include="LeetCode\" />
   </ItemGroup>
 
 </Project>
