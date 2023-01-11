@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.369565217391304" branch-rate="0.428571428571429" lines-covered="17" lines-valid="46" branches-covered="6" branches-valid="14" complexity="16" version="0" timestamp="1673311407">
+  <sources>
+    <source>C:\Users\ATM\</source>
+  </sources>
+  <packages>
+    <package name="ProblemSolving" line-rate="0.377777777777778" branch-rate="0.428571428571429" complexity="15">
+      <classes>
+        <class name="ProblemSolving.LeetCode.Leetcode" filename="C:\Users\ATM\Desktop\ProblemSolvingWithCSharp\ProblemSolving\ProblemSolving\LeetCode\Leetcode.cs" line-rate="0.377777777777778" branch-rate="0.428571428571429" complexity="15">
+          <methods>
+            <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="SubsetXORSum" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="24" hits="18" branch="true" condition-coverage="100% (2/2)" />
+                <line number="26" hits="8" branch="false" />
+                <line number="30" hits="8" branch="false" />
+                <line number="31" hits="64" branch="true" condition-coverage="100% (2/2)" />
+                <line number="32" hits="24" branch="false" />
+                <line number="33" hits="24" branch="true" condition-coverage="100% (2/2)" />
+                <line number="34" hits="12" branch="false" />
+                <line number="35" hits="12" branch="false" />
+                <line number="36" hits="12" branch="false" />
+                <line number="37" hits="24" branch="false" />
+                <line number="38" hits="8" branch="false" />
+                <line number="39" hits="8" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Subset" signature="(...)" line-rate="0" branch-rate="0" complexity="6">
+              <lines>
+                <line number="49" hits="0" branch="false" />
+                <line number="50" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="54" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="55" hits="0" branch="false" />
+                <line number="56" hits="0" branch="false" />
+                <line number="57" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="64" hits="0" branch="false" />
+                <line number="65" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+                <line number="68" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PrintListofList" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="71" hits="0" branch="false" />
+                <line number="72" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="73" hits="0" branch="false" />
+                <line number="74" hits="0" branch="false" />
+                <line number="75" hits="0" branch="false" />
+                <line number="76" hits="0" branch="false" />
+                <line number="77" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="24" hits="18" branch="true" condition-coverage="100% (2/2)" />
+            <line number="26" hits="8" branch="false" />
+            <line number="30" hits="8" branch="false" />
+            <line number="31" hits="64" branch="true" condition-coverage="100% (2/2)" />
+            <line number="32" hits="24" branch="false" />
+            <line number="33" hits="24" branch="true" condition-coverage="100% (2/2)" />
+            <line number="34" hits="12" branch="false" />
+            <line number="35" hits="12" branch="false" />
+            <line number="36" hits="12" branch="false" />
+            <line number="37" hits="24" branch="false" />
+            <line number="38" hits="8" branch="false" />
+            <line number="39" hits="8" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="50" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="54" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="55" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
+            <line number="57" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="64" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="68" hits="0" branch="false" />
+            <line number="71" hits="0" branch="false" />
+            <line number="72" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="73" hits="0" branch="false" />
+            <line number="74" hits="0" branch="false" />
+            <line number="75" hits="0" branch="false" />
+            <line number="76" hits="0" branch="false" />
+            <line number="77" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="ProblemSolving.Tests" line-rate="0" branch-rate="1" complexity="1">
+      <classes>
+        <class name="AutoGeneratedProgram" filename="C:\Users\ATM\.nuget\packages\microsoft.net.test.sdk\17.3.2\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
