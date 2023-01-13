@@ -65,6 +65,25 @@ namespace ProblemSolving.DS.LinkedList
             }
         }
 
+        public void InsertByRecursion(int val, int index)
+        {
+            head = InsertByRecursion(val, index, head);
+
+        }
+
+        private Node InsertByRecursion(int val, int index, Node node)
+        {
+            if (index == 0)
+            {
+                var newNode = new Node(val, node);
+                size++;
+                return newNode;
+            }
+            node.next = InsertByRecursion(val, index-1, node.next);
+
+            return node;
+        }
+
         /// <summary>
         /// Delete the first item
         /// </summary>
@@ -107,7 +126,7 @@ namespace ProblemSolving.DS.LinkedList
 
             var pre = Get(index - 1);
             var val = pre.next.value;
-            
+
             pre.next = pre.next.next;
 
             return val;
