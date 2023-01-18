@@ -157,6 +157,7 @@
     <Compile Remove="DislikeThrees.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Domino_Disaster.cs" />
+    <Compile Remove="DS\LinkedList\MainClass.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
     <Compile Remove="EvenOdds.cs" />
@@ -248,7 +249,6 @@
     <Folder Include="Algo\Searching\" />
     <Folder Include="Codechef\" />
     <Folder Include="Codeforces\" />
-    <Folder Include="LeetCode\" />
   </ItemGroup>
 
 </Project>

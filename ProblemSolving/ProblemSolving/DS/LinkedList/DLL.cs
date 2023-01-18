@@ -53,7 +53,7 @@ namespace ProblemSolving.DS.LinkedList
             }
             var node = new Node(val);
             node.next = null;
-            var lastNode = head; ;
+            var lastNode = head;
 
             while (lastNode.next != null)
             {
@@ -91,9 +91,7 @@ namespace ProblemSolving.DS.LinkedList
             node.pre = previousNode;
 
         }
-
-
-        public void Display()
+            public void Display()
         {
             var node = head;
             var last = node;
