@@ -21,9 +21,10 @@ namespace ProblemSolving.LeetCode
             ll2.InsertAtFirst(2);
             ll2.InsertAtFirst(1);
 
-            var resultList = new LinkedList();
 
-            var output = resultList.MergeList(ll, ll2);
+            //var resultList = new LinkedList();
+
+            //var output = resultList.MergeList(ll, ll2);
 
 
             //ll.InsertAtFirst(2);
@@ -33,5 +34,6 @@ namespace ProblemSolving.LeetCode
             //ll.DeleteDuplicates();
             //ll.Display();
         }
+
     }
 }

@@ -112,6 +112,53 @@ namespace ProblemSolving.LeetCode
             return ansLL.head;
         }
 
+
+
+        /// <summary>
+        /// https://leetcode.com/problems/linked-list-cycle/
+        /// </summary>
+        public bool HasCycle(ListNode head)
+        {
+            ListNode fast = head;
+            ListNode slow = head;
+
+            while (fast != null && fast.next != null)
+            {
+                fast = fast.next.next;
+                slow = slow.next;
+                if (fast == slow)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public int LengthOfCycle(ListNode head)
+        {
+            ListNode fast = head;
+            ListNode slow = head;
+
+            while (fast != null && fast.next != null)
+            {
+                fast = fast.next.next;
+                slow = slow.next;
+                if (fast == slow)
+                {
+                    var count = 0;
+
+                    do
+                    {
+                        slow = slow.next;
+                        count++;
+                     } while (fast != slow);
+
+                    return count;
+                }
+            }
+            return 0;
+        }
+
         public void Display()
         {
             ListNode tempNode = head;
