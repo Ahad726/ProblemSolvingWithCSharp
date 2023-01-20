@@ -159,6 +159,45 @@ namespace ProblemSolving.LeetCode
             return 0;
         }
 
+
+        /// <summary>
+        /// https://leetcode.com/problems/linked-list-cycle-ii/
+        /// </summary>
+        /// <param name="head"></param>
+        /// <returns></returns>
+        public ListNode DetectCycle(ListNode head)
+        {
+            ListNode fast = head;
+            ListNode slow = head;
+            bool HasCycle = false;
+            while (fast != null && fast.next != null)
+            {
+                fast = fast.next.next;
+                slow = slow.next;
+                if (fast == slow)
+                {
+                    HasCycle = true;
+                    break;
+                }
+            }
+
+            if (!HasCycle)
+            {
+                return null;
+            }
+
+            fast = head;
+
+            while (fast != slow)
+            {
+                fast = fast.next;
+                slow = slow.next;
+
+            }
+
+            return fast;
+        }
+
         public void Display()
         {
             ListNode tempNode = head;
