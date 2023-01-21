@@ -235,6 +235,33 @@ namespace ProblemSolving.LeetCode
             return ans;
         }
 
+
+        //https://leetcode.com/problems/remove-linked-list-elements/description/
+
+        public ListNode Remove( int val)
+        {
+            var node = head;
+
+            while (node != null)
+            {
+                if (head != null && head.val == val)
+                {
+                    head = head.next;
+                }
+                else if(node.next != null && node.next.val == val)
+                {
+                    node.next = node.next.next;
+                }
+                else
+                {
+                    node = node.next;
+                }
+
+            }
+
+            return head;
+        }
+
         public void Display()
         {
             ListNode tempNode = head;
