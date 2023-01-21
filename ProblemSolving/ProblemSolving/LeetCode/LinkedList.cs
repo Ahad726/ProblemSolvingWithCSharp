@@ -151,7 +151,7 @@ namespace ProblemSolving.LeetCode
                     {
                         slow = slow.next;
                         count++;
-                     } while (fast != slow);
+                    } while (fast != slow);
 
                     return count;
                 }
@@ -196,6 +196,43 @@ namespace ProblemSolving.LeetCode
             }
 
             return fast;
+        }
+
+
+        // https://leetcode.com/problems/happy-number/description/
+        public bool IsHappy(int n)
+        {
+            var fast = n;
+            var slow = n;
+
+            do
+            {
+                slow = FindSquare(slow);
+                fast = FindSquare(FindSquare(fast));
+            } while (slow != fast);
+
+            if (slow == 1)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+
+        private static int FindSquare(int num)
+        {
+            var ans = 0;
+
+            while (num > 0)
+            {
+                var rem = num % 10;
+
+                ans += rem * rem;
+                num /= 10;
+            }
+
+            return ans;
         }
 
         public void Display()

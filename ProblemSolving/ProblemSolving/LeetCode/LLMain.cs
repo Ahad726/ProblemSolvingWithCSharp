@@ -33,6 +33,8 @@ namespace ProblemSolving.LeetCode
             //ll.Display();
             //ll.DeleteDuplicates();
             //ll.Display();
+
+            ll2.IsHappy(19);
         }
 
     }
