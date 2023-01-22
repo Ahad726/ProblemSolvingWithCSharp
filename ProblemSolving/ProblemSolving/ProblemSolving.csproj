@@ -185,6 +185,7 @@
     <Compile Remove="LeetCode\Leetcode.cs" />
     <Compile Remove="LeetCode\LeetcodeSubset.cs" />
     <Compile Remove="LeetCode\LetterOfCombination.cs" />
+    <Compile Remove="LeetCode\LLMain.cs" />
     <Compile Remove="LeetCode\Missing_Number.cs" />
     <Compile Remove="LeetCode\NumOfStep.cs" />
     <Compile Remove="LeetCode\PalindromeCheck.cs" />
