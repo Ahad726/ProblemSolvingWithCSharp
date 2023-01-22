@@ -15,10 +15,28 @@ namespace ProblemSolving.Leetcode_Blind_75
 
 
 
+
+        public bool ContainsDuplicate(int[] nums)
+        {
+            var dic = new Dictionary<int, int>();
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (dic.ContainsKey(nums[i]))
+                {
+                    return true;
+                }
+                else
+                {
+                    dic[nums[i]] = i;
+                }
+            }
+            return false;
+        }
+
+
         public static int[] TwoSum(int[] nums, int target)
         {
-
-
             var dictionary = new Dictionary<int, int>();
 
             for (int i = 0; i < nums.Length; i++)
@@ -37,9 +55,7 @@ namespace ProblemSolving.Leetcode_Blind_75
             }
 
             return null;
-
-
-
         }
+
     }
 }
