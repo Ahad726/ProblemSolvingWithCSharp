@@ -18,18 +18,13 @@ namespace ProblemSolving.Leetcode_Blind_75
 
         public bool ContainsDuplicate(int[] nums)
         {
-            var dic = new Dictionary<int, int>();
+            var set = new HashSet<int>();
 
             for (int i = 0; i < nums.Length; i++)
             {
-                if (dic.ContainsKey(nums[i]))
-                {
+                if (set.Contains(nums[i]))
                     return true;
-                }
-                else
-                {
-                    dic[nums[i]] = i;
-                }
+                set.Add(nums[i]);
             }
             return false;
         }
