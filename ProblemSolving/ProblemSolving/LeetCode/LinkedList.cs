@@ -262,6 +262,22 @@ namespace ProblemSolving.LeetCode
             return head;
         }
 
+
+        // https://leetcode.com/problems/middle-of-the-linked-list/
+        public ListNode ReturnMid()
+        {
+            var fast = head;
+            var slow = head;
+
+            while (fast != null && fast.next != null)
+            {
+                fast = fast.next.next;
+                slow = slow.next;
+            }
+
+            return slow;
+        }
+
         public void Display()
         {
             ListNode tempNode = head;

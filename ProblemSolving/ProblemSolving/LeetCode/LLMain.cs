@@ -36,40 +36,19 @@ namespace ProblemSolving.LeetCode
 
             //ll2.IsHappy(19);
 
-            //ll.InsertAtFirst(6);
-            //ll.InsertAtFirst(5);
-            //ll.InsertAtFirst(4);
-            //ll.InsertAtFirst(3);
-            //ll.InsertAtFirst(6);
-            //ll.InsertAtFirst(2);
-            //ll.InsertAtFirst(1);
-            //ll.Display();
-
-            //ll.Remove(6);
-
-            //ll.Display();
-
-
-            //ll.InsertAtFirst(6);
-            //ll.InsertAtFirst(6);
-            //ll.InsertAtFirst(6);
-            //ll.InsertAtFirst(6);
-            //ll.Display();
-
-            //ll.Remove(6);
-
-            //ll.Display();
 
 
             ll.InsertAtFirst(1);
+            ll.InsertAtFirst(3);
             ll.InsertAtFirst(2);
-            ll.InsertAtFirst(2);
+            ll.InsertAtFirst(1);
             ll.InsertAtFirst(1);
             ll.Display();
 
-            ll.Remove(2);
+            //ll.Remove(2);
+            //ll.Display();
 
-            ll.Display();
+            Console.WriteLine( ll.ReturnMid().val);
 
 
         }
