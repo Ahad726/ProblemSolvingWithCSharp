@@ -4,3 +4,5 @@
 /.vs
 /ProblemSolving/ProblemSolving/.vscode
 /ProblemSolving/.vscode
+/ProblemSolving/ProblemSolving.Tests/bin
+/ProblemSolving/ProblemSolving.Tests/obj

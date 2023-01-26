@@ -172,6 +172,7 @@
     <Compile Remove="HelpfulMaths.cs" />
     <Compile Remove="HQ9.cs" />
     <Compile Remove="IQtest.cs" />
+    <Compile Remove="Leetcode Blind 75\ArraysHashing.cs" />
     <Compile Remove="LeetCode\Ceiling_sorted_array.cs" />
     <Compile Remove="LeetCode\DisappearedNumbers.cs" />
     <Compile Remove="LeetCode\FindAllDuplicates.cs" />

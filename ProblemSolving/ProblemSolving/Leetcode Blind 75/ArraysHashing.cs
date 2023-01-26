@@ -12,9 +12,39 @@ namespace ProblemSolving.Leetcode_Blind_75
 
             //Console.WriteLine(String.Join(',', output));
 
-            var isAnagram = IsAnagram("anagram", "nagaram");
-            //var isAnagram = IsAnagram("Rat", "cat");
-            Console.WriteLine(isAnagram);
+            //var isAnagram = IsAnagram("anagram", "nagaram");
+            LongestConsecutive(new int[] {});
+        }
+
+        public static int LongestConsecutive(int[] nums)
+        {
+            var numbrDic = new HashSet<int>();
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                numbrDic.Add(nums[i]);
+            }
+
+            int longCount = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var tempNmbr = nums[i];
+                if (!numbrDic.Contains(tempNmbr - 1))
+                {
+                    // nums[i] is the starting element
+                    var tempCount = 0;
+
+                    while (numbrDic.Contains((tempNmbr + tempCount)))
+                    {
+                        tempCount += 1;
+                    }
+
+
+                    longCount = longCount < tempCount ? tempCount : longCount;
+                }
+            }
+            return longCount;
         }
 
         public static bool IsAnagram(string s, string t)
