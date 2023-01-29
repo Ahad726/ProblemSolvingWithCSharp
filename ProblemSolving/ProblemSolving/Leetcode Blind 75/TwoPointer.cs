@@ -14,54 +14,81 @@ namespace ProblemSolving.Leetcode_Blind_75
 
             //Console.WriteLine(MaxArea(new int[] { 2, 3, 4, 5, 18, 17, 6 }));
 
-            var nmbr = TwoSum(new int[] { -1, -1, 1, 1, 1, 1 }, -2);
+            var result = ThreeSum(new int[] { 0,0,0,0 });
+
         }
 
+        public static IList<IList<int>> ThreeSum(int[] nums)
+        {
+            Array.Sort(nums);
+
+            var tripletList = new List<IList<int>>();
+
+            for (int i = 0; i < nums.Length - 2; i++)
+            {
+                if (i > 0 && nums[i] == nums[i - 1])
+                    continue;
+                var fnmbr = nums[i];
+
+                var left = i + 1;
+                var right = nums.Length - 1;
+
+                while (left < right)
+                {
+                    var sum = fnmbr + nums[left] + nums[right];
+                    if(fnmbr == left || sum < 0)
+                    {
+                        left++;
+                        continue;
+                    }
+                    else if(sum > 0)
+                    {
+                        right--;
+                    }
+                    else
+                    {
+                        tripletList.Add(new List<int> { fnmbr, nums[left], nums[right] });
+                        left++;
+
+                        while (nums[left] == nums[left-1] && left < right)
+                        {
+                            left++;
+                        }
+                        
+                    }
+                }
+            }
+
+            return tripletList;
+        }
 
         public static int[] TwoSum(int[] numbers, int target)
         {
-            int start = 0;
-            int end = numbers.Length - 1;
 
-            while (start < end)
+            int left = 0;
+            int right = numbers.Length - 1;
+
+            while (left < right)
             {
-                int mid = start + (end - start) / 2;
-
-                int midVal = numbers[mid];
-
-                if (midVal > target && start != mid)
+                var sum = numbers[left] + numbers[right];
+                if (sum == target)
                 {
-                    end = mid;
+                    break;
+                }
+                else if (sum > target)
+                {
+                    right--;
                 }
                 else
                 {
-                    break;
+                    left++;
                 }
+
             }
 
-            int firstIndex = 0;
-            int secondIndex = 0;
-
-            var nmbrDic = new Dictionary<int, int>();
-
-            for (int i = start; i <= end; i++)
-            {
-                nmbrDic[numbers[i]] = i;
-            }
-
-            for (int i = start; i < end; i++)
-            {
-                int rem = target - numbers[i];
-                firstIndex = i;
-                if (nmbrDic.ContainsKey(rem))
-                {
-                    secondIndex = nmbrDic[rem];
-                    break;
-                }
-            }
+            return new int[] { left + 1, right + 1 };
 
 
-            return new int[] {firstIndex+1,secondIndex+1};
         }
 
 
