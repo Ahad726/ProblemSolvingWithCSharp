@@ -14,9 +14,13 @@ namespace ProblemSolving.Leetcode_Blind_75
 
             //Console.WriteLine(MaxArea(new int[] { 2, 3, 4, 5, 18, 17, 6 }));
 
-            var result = ThreeSum(new int[] { 0,0,0,0 });
+            //var result = ThreeSum(new int[] { 0,0,0,0 });
 
+            
         }
+
+       
+
 
         public static IList<IList<int>> ThreeSum(int[] nums)
         {
