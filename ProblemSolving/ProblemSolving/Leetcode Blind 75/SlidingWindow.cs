@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ProblemSolving.Leetcode_Blind_75
@@ -11,58 +12,32 @@ namespace ProblemSolving.Leetcode_Blind_75
             //var rslt1 = LengthOfLongestSubstring("abcabcbb");
 
             //var length = CharacterReplacement("ABAA", 0);
-            var length = CharacterReplacement("AABABBA", 1);
+            var length = CharacterReplacement("ABABBA", 2);
 
             Console.WriteLine(length);
         }
 
         public static int CharacterReplacement(string s, int k)
         {
-            var result = 0;
-            for (int i = 0; i < s.Length; i++)
+            var hashMap = new Dictionary<char, int>();
+            int l = 0;
+            int result = 0;
+            var maxFreq = 0;
+            for (int r = 0; r < s.Length; r++)
             {
-                var tempChr = s[i];
-                var tempK = k;
-                var tempL = 0;
+                hashMap[s[r]] = 1 + (hashMap.ContainsKey(s[r]) ? hashMap[s[r]] : 0); // if condition is true then the code can be
+                                                                                     // simplified as hashMap[s[i]] = 1 + hashMap[s[i]]
+                maxFreq = Math.Max(maxFreq, hashMap[s[r]]);
 
-                // left
-                for (int j = i; j > -1; j--)
+                if((r - l + 1) - maxFreq > k)   // window size = r - l + 1
                 {
-                    if(tempChr == s[j])
-                    {
-                        tempL++;
-                    }
-                    else if(tempK != 0)
-                    {
-                        tempL++;
-                        tempK--;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    hashMap[s[l]] -= 1;
+                    l += 1;
                 }
 
-                //right
-                for (int j = i + 1; j < s.Length; j++)
-                {
-                    if(tempChr == s[j])
-                    {
-                        tempL++;
-                    }
-                    else if(tempK != 0)
-                    {
-                        tempL++;
-                        tempK--;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-
-                result = result > tempL ? result : tempL;
+                result = Math.Max(result, r - l + 1);
             }
+
             return result;
         }
 
