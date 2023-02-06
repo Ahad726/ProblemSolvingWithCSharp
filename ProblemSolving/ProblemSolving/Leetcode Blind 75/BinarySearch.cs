@@ -8,29 +8,88 @@ namespace ProblemSolving.Leetcode_Blind_75
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine(Search(new int[] { 1, 3 }, 3));
         }
 
-        public static int FindMin(int[] nums)
+        public static int Search(int[] nums, int target)
         {
-            int lastIndex = nums.Length - 1;
-            int firstIndex = 0;
+            int left = 0;
+            int right = nums.Length - 1;
 
-
-            if (nums[firstIndex] > nums[lastIndex])
+            while (left <= right)
             {
-                for (int i = lastIndex; i > 0; i--)
+                int mid = left + (right - left) / 2;
+
+                if (nums[mid] == target)
+                    return mid;
+
+                // left sorted portion
+                if (nums[left] <= nums[mid])
                 {
-                    if (nums[i-1] > nums[i])
+                    if (target > nums[mid])
                     {
-                        return nums[i];
+                        left = mid + 1;
+                    }
+                    else
+                    {
+                        if (target < nums[left])
+                        {
+                            left = mid + 1;
+                        }
+                        else
+                        {
+                            right = mid;
+                        }
+                    }
+                }
+                // right sorted portion
+                else
+                {
+                    if (target < nums[mid])
+                    {
+                        right = mid;
+                    }
+                    else
+                    {
+                        if (target > nums[right])
+                        {
+                            right = mid - 1;
+                        }
+                        else
+                        {
+                            left = mid + 1;
+                        }
                     }
                 }
             }
-            else
-            {
 
+            return -1;
+        }
+        public static int FindMin(int[] nums)
+        {
+            int left = 0;
+            int right = nums.Length - 1;
+
+            while (left <= right)
+            {
+                if (nums[left] <= nums[right])
+                {
+                    return nums[left];
+                }
+                int mid = left + (right - left) / 2;
+
+                if (nums[mid] >= nums[left])
+                {
+                    left = mid + 1;
+                }
+                else
+                {
+                    right = mid;
+                }
             }
+
+            return 0;
+
         }
     }
 }
