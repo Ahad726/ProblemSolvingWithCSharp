@@ -157,6 +157,7 @@
     <Compile Remove="DislikeThrees.cs" />
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Domino_Disaster.cs" />
+    <Compile Remove="DS\LinkedList\LinkedList.cs" />
     <Compile Remove="DS\LinkedList\MainClass.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
@@ -173,6 +174,8 @@
     <Compile Remove="HQ9.cs" />
     <Compile Remove="IQtest.cs" />
     <Compile Remove="Leetcode Blind 75\ArraysHashing.cs" />
+    <Compile Remove="Leetcode Blind 75\BinarySearch.cs" />
+    <Compile Remove="Leetcode Blind 75\LinkedList.cs" />
     <Compile Remove="Leetcode Blind 75\SlidingWindow.cs" />
     <Compile Remove="Leetcode Blind 75\StackPractice.cs" />
     <Compile Remove="Leetcode Blind 75\TwoPointer.cs" />
@@ -254,6 +257,7 @@
     <Folder Include="Algo\Searching\" />
     <Folder Include="Codechef\" />
     <Folder Include="Codeforces\" />
+    <Folder Include="Leetcode Blind 75\" />
   </ItemGroup>
 
 </Project>

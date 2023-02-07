@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Net.Http.Headers;
 using System.Text;
 
 namespace ProblemSolving.LeetCode
@@ -239,7 +238,7 @@ namespace ProblemSolving.LeetCode
 
         //https://leetcode.com/problems/remove-linked-list-elements/description/
 
-        public ListNode Remove(int val)
+        public ListNode Remove( int val)
         {
             var node = head;
 
@@ -249,7 +248,7 @@ namespace ProblemSolving.LeetCode
                 {
                     head = head.next;
                 }
-                else if (node.next != null && node.next.val == val)
+                else if(node.next != null && node.next.val == val)
                 {
                     node.next = node.next.next;
                 }
@@ -277,38 +276,6 @@ namespace ProblemSolving.LeetCode
             }
 
             return slow;
-        }
-
-        public  ListNode ReverseList()
-        {
-            var curr = head;
-            ListNode pre = null;
-
-            while (curr != null)
-            {
-                var nxt = curr.next;
-                curr.next = pre;
-                pre = curr;
-                curr = nxt;
-            }
-
-            head = pre;
-            return pre;
-        }
-
-        public void RecursiveReverseList(ListNode node)
-        {
-            if (node == tail)
-            {
-                head = tail;
-                return;
-            }
-
-            RecursiveReverseList(node.next);
-            tail.next = node;
-            tail = node;
-            tail.next = null;
-
         }
 
         public void Display()
