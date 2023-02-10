@@ -38,19 +38,30 @@ namespace ProblemSolving.LeetCode
 
 
 
-            ll.InsertAtFirst(1);
-            ll.InsertAtFirst(3);
-            ll.InsertAtFirst(2);
-            ll.InsertAtFirst(1);
-            ll.InsertAtFirst(1);
-            ll.Display();
+            //ll.InsertAtFirst(1);
+            //ll.InsertAtFirst(3);
+            //ll.InsertAtFirst(2);
+            //ll.InsertAtFirst(1);
+            //ll.InsertAtFirst(1);
+            //ll.Display();
 
-            //ll.Remove(2);
-            ll.ReverseList();
-            ll.Display();
+            ////ll.Remove(2);
+            //ll.ReverseList();
+            //ll.Display();
 
             //Console.WriteLine( ll.ReturnMid().val);
 
+
+            ll.InsertAtFirst(5);
+            ll.InsertAtFirst(4);
+            ll.InsertAtFirst(3);
+            ll.InsertAtFirst(2);
+            ll.InsertAtFirst(1);
+
+
+            var resultList = new LinkedList();
+
+            resultList.Reorder(ll);
 
         }
 

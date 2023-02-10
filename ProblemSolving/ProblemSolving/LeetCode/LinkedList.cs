@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Net.Http.Headers;
 using System.Text;
 
@@ -279,7 +280,7 @@ namespace ProblemSolving.LeetCode
             return slow;
         }
 
-        public  ListNode ReverseList()
+        public ListNode ReverseList()
         {
             var curr = head;
             ListNode pre = null;
@@ -311,6 +312,96 @@ namespace ProblemSolving.LeetCode
 
         }
 
+
+        public ListNode Merge(LinkedList l1, LinkedList l2)
+        {
+            var mergedList = MergeTwoLists(l1.head, l2.head);
+            return mergedList;
+        }
+
+        public ListNode MergeTwoLists(ListNode list1, ListNode list2)
+        {
+            var newNode = new ListNode();
+
+            var tempNode = newNode;
+
+            while (list1 != null && list2 != null)
+            {
+                if (list1.val <= list2.val)
+                {
+                    tempNode.next = list1;
+                    list1 = list1.next;
+                }
+                else
+                {
+                    tempNode.next = list2;
+                    list2 = list2.next;
+                }
+                tempNode = tempNode.next;
+            }
+
+            if (list1 != null)
+            {
+                tempNode.next = list1;
+            }
+            else if (list2 != null)
+            {
+                tempNode.next = list2;
+            }
+
+
+            return newNode.next;
+        }
+
+        public void Reorder(LinkedList ll)
+        {
+            ReorderList(ll.head);
+        }
+
+        public void ReorderList(ListNode head)
+        {
+            var slow = head;
+            var fast = head.next;
+
+            while (fast != null && fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+            var midNode = slow;
+            ListNode pre = null;
+            var curr = slow.next;
+
+            while (curr != null)
+            {
+                var next = curr.next;
+                curr.next = pre;
+                pre = curr;
+                curr = next;
+            }
+
+            // rearrange
+            var hf = head;
+            var hs = pre;
+
+            while (hf != null && hs != null)
+            {
+                var temp = hf.next;
+                hf.next = hs;
+                hf = temp;
+                temp = hs.next;
+                hs.next = hf;
+                hs = temp;
+            }
+
+            // set lastnode.next to null
+            if (hf != null)
+            {
+                hf.next = null;
+            }
+
+
+        }
         public void Display()
         {
             ListNode tempNode = head;
