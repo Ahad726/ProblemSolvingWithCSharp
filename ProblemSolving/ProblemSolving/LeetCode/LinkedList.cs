@@ -399,9 +399,37 @@ namespace ProblemSolving.LeetCode
             {
                 hf.next = null;
             }
-
-
         }
+
+        public void RemoveNth(LinkedList ll)
+        {
+            var result = RemoveNthFromEnd(ll.head, 2);
+        }
+
+        public ListNode RemoveNthFromEnd(ListNode head, int n)
+        {
+            var dummyNode = new ListNode(0, head);
+
+            var left = dummyNode;
+
+            var right = head;
+
+            while (n > 0)
+            {
+                right = right.next;
+                n -= 1;
+            }
+
+            while (right != null)
+            {
+                left = left.next;
+                right = right.next;
+            }
+
+            left.next = left.next.next;
+            return dummyNode.next;
+        }
+
         public void Display()
         {
             ListNode tempNode = head;

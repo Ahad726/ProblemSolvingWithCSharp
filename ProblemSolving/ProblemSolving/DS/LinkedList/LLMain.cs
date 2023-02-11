@@ -61,7 +61,7 @@ namespace ProblemSolving.LeetCode
 
             var resultList = new LinkedList();
 
-            resultList.Reorder(ll);
+            resultList.RemoveNth(ll);
 
         }
 
