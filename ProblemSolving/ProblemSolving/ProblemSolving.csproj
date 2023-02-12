@@ -158,6 +158,7 @@
     <Compile Remove="DominoPiling.cs" />
     <Compile Remove="Domino_Disaster.cs" />
     <Compile Remove="DS\LinkedList\LinkedList.cs" />
+    <Compile Remove="DS\LinkedList\LLMain.cs" />
     <Compile Remove="DS\LinkedList\MainClass.cs" />
     <Compile Remove="EasyProblem.cs" />
     <Compile Remove="Elephant.cs" />
@@ -192,6 +193,7 @@
     <Compile Remove="LeetCode\Leetcode.cs" />
     <Compile Remove="LeetCode\LeetcodeSubset.cs" />
     <Compile Remove="LeetCode\LetterOfCombination.cs" />
+    <Compile Remove="LeetCode\LinkedList.cs" />
     <Compile Remove="LeetCode\LLMain.cs" />
     <Compile Remove="LeetCode\Missing_Number.cs" />
     <Compile Remove="LeetCode\NumOfStep.cs" />
@@ -258,6 +260,7 @@
     <Folder Include="Codechef\" />
     <Folder Include="Codeforces\" />
     <Folder Include="Leetcode Blind 75\" />
+    <Folder Include="LeetCode\" />
   </ItemGroup>
 
 </Project>
