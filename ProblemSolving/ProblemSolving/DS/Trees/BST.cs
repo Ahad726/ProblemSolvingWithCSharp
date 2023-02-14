@@ -6,6 +6,13 @@ namespace ProblemSolving.DS.Trees
 {
     public class BST
     {
+
+        public int MaxDepth(TreeNode root)
+        {
+            return root == null ? 0 : 1 + Math.Max(MaxDepth(root.left), MaxDepth(root.right));
+        }
+
+      
         public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
         {
             var curr = root;
@@ -45,15 +52,15 @@ namespace ProblemSolving.DS.Trees
             if (root == null)
                 return null;
 
-             if(target > root.val)
+            if (target > root.val)
                 root.right = Remove(root.right, target);
-             else if(target < root.val)
+            else if (target < root.val)
                 root.left = Remove(root.left, target);
             else
             {
                 if (root.left == null)
                     return root.right;
-                else if(root.right == null)
+                else if (root.right == null)
                     return root.left;
                 else
                 {
