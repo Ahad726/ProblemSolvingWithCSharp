@@ -18,6 +18,7 @@ namespace ProblemSolving.DS.Trees
            
 
             var res = bst.MaxDepth(root);
+            bst.Inorder(root);
         }
     }
 }

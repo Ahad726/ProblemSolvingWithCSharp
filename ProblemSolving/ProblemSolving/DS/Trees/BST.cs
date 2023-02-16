@@ -6,6 +6,19 @@ namespace ProblemSolving.DS.Trees
 {
     public class BST
     {
+        // DFS
+        public void Inorder(TreeNode root)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+            Inorder(root.left);
+            Console.WriteLine(root.val);
+            Inorder(root.right);
+        }
+
 
         public int MaxDepth(TreeNode root)
         {
