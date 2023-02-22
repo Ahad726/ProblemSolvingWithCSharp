@@ -7,8 +7,12 @@ namespace ProblemSolving.DS.Trees
 {
     public class BST
     {
+        /// <summary>
+        ///Print -> left root right
+        /// </summary>
+        /// <param name="root"></param>
         // DFS
-        public void Inorder(TreeNode root) // left root right
+        public void Inorder(TreeNode root) 
         {
             if (root == null)
             {
@@ -20,7 +24,31 @@ namespace ProblemSolving.DS.Trees
             Inorder(root.right);
         }
 
+        /// <summary>
+        /// Root Left Right
+        /// </summary>
+        /// <param name="root"></param>
+        public void PreOrder(TreeNode root)
+        {
+            if (root == null) { return; }
 
+            Console.WriteLine(root.val);
+            PreOrder(root.left);
+            PreOrder(root.right);
+        }
+
+        /// <summary>
+        /// Left Right Root
+        /// </summary>
+        /// <param name="root"></param>
+        public void PostOrder(TreeNode root) 
+        {
+            if (root == null)
+                return;
+            PostOrder(root.left);
+            PostOrder(root.right);
+            Console.WriteLine(root.val);
+        }
 
 
         public TreeNode InvertTree(TreeNode root)

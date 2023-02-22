@@ -10,9 +10,9 @@ namespace ProblemSolving.DS.Trees
         {
             var bst = new BST();
 
-            var root = bst.Insert(null, 1);
-            bst.Insert(root,2);
-            //bst.Insert(root,15);
+            var root = bst.Insert(null, 4);
+            bst.Insert(root,3);
+            bst.Insert(root,5);
             //bst.Insert(root, 25);
             //bst.Insert(root, 40);
 
@@ -20,10 +20,14 @@ namespace ProblemSolving.DS.Trees
             //var res = bst.MaxDepth(root);
             bst.Inorder(root);
 
-            bst.InvertTree(root);
+            //bst.InvertTree(root);
 
             Console.WriteLine();
-            bst.Inorder(root);
+            bst.PreOrder(root);
+
+            Console.WriteLine();
+            bst.PostOrder(root);
+
         }
     }
 }
