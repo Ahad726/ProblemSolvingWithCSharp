@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 namespace ProblemSolving.DS.Trees
@@ -7,7 +8,7 @@ namespace ProblemSolving.DS.Trees
     public class BST
     {
         // DFS
-        public void Inorder(TreeNode root)
+        public void Inorder(TreeNode root) // left root right
         {
             if (root == null)
             {
@@ -20,6 +21,23 @@ namespace ProblemSolving.DS.Trees
         }
 
 
+
+
+        public TreeNode InvertTree(TreeNode root)
+        {
+            if (root == null) { return null; }
+
+            var temp = root.left;
+            root.left = root.right;
+            root.right = temp;
+            InvertTree(root.left);
+            InvertTree(root.right);
+            
+
+            return root;
+        }
+
+       
         public int MaxDepth(TreeNode root)
         {
             return root == null ? 0 : 1 + Math.Max(MaxDepth(root.left), MaxDepth(root.right));
