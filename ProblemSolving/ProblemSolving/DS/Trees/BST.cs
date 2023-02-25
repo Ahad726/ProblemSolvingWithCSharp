@@ -1,12 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Text;
 
 namespace ProblemSolving.DS.Trees
 {
     public class BST
     {
+
+        public void BFS(TreeNode root)
+        {
+            var queue = new Queue<TreeNode>();
+
+            queue.Enqueue(root);
+
+            while (queue.Count > 0)
+            {
+                var curr = queue.Dequeue();
+                if (curr == null) continue;
+                queue.Enqueue(curr.left);
+                queue.Enqueue(curr.right);
+                Console.WriteLine(curr.val);
+            }
+
+        }
+
+
         public bool IsSameTree(TreeNode p, TreeNode q)
         {
             if (p == null && q == null)
@@ -14,19 +34,19 @@ namespace ProblemSolving.DS.Trees
                 return true;
             }
 
-            if(p == null || q == null)
+            if (p == null || q == null)
             {
                 return false;
             }
 
-            if(p.val != q.val)
+            if (p.val != q.val)
             {
                 return false;
             }
 
-            
 
-            return (IsSameTree(p.left,q.left) && IsSameTree(p.right,q.right));
+
+            return (IsSameTree(p.left, q.left) && IsSameTree(p.right, q.right));
 
 
         }
@@ -37,7 +57,7 @@ namespace ProblemSolving.DS.Trees
         /// </summary>
         /// <param name="root"></param>
         // DFS
-        public void Inorder(TreeNode root) 
+        public void Inorder(TreeNode root)
         {
             if (root == null)
             {
@@ -66,7 +86,7 @@ namespace ProblemSolving.DS.Trees
         /// Left Right Root
         /// </summary>
         /// <param name="root"></param>
-        public void PostOrder(TreeNode root) 
+        public void PostOrder(TreeNode root)
         {
             if (root == null)
                 return;
@@ -85,18 +105,18 @@ namespace ProblemSolving.DS.Trees
             root.right = temp;
             InvertTree(root.left);
             InvertTree(root.right);
-            
+
 
             return root;
         }
 
-       
+
         public int MaxDepth(TreeNode root)
         {
             return root == null ? 0 : 1 + Math.Max(MaxDepth(root.left), MaxDepth(root.right));
         }
 
-      
+
         public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
         {
             var curr = root;
