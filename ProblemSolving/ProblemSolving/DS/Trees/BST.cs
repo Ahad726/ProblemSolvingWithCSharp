@@ -18,14 +18,42 @@ namespace ProblemSolving.DS.Trees
             while (queue.Count > 0)
             {
                 var curr = queue.Dequeue();
-                if (curr == null) continue;
-                queue.Enqueue(curr.left);
-                queue.Enqueue(curr.right);
+                if(curr.left != null) 
+                    queue.Enqueue(curr.left);
+                if(curr.right != null)
+                    queue.Enqueue(curr.right);
                 Console.WriteLine(curr.val);
             }
 
         }
 
+        public IList<IList<int>> LevelOrder(TreeNode root)
+        {
+            
+            var queue = new Queue<TreeNode>();
+            var rootList = new List<IList<int>>();
+            if (root == null) return rootList;
+            queue.Enqueue(root);
+
+            while (queue.Count > 0)
+            {
+                var currLevelCout = queue.Count;
+                var currList = new List<int>();
+
+                while (currLevelCout > 0)
+                {
+                    var curr = queue.Dequeue();
+                    currList.Add(curr.val);
+                    if(curr.left != null)
+                        queue.Enqueue(curr.left);
+                    if(curr.right != null)
+                        queue.Enqueue(curr.right);
+                    currLevelCout--;
+                }
+                rootList.Add(currList);
+            }
+            return rootList;
+        }
 
         public bool IsSameTree(TreeNode p, TreeNode q)
         {
