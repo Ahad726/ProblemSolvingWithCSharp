@@ -9,6 +9,23 @@ namespace ProblemSolving.DS.Trees
     public class BST
     {
 
+        public bool IsSubtree(TreeNode root, TreeNode subRoot)
+        {
+            if (root == null & subRoot == null)
+                return true;
+            if (root == null || subRoot == null)
+                return false;
+            if (root.val == subRoot.val)
+            {
+                return IsSubtree(root.left, subRoot.left) && IsSubtree(root.right, subRoot.right);
+            }
+            else
+            {
+                return IsSubtree(root.left, subRoot) && IsSubtree(root.right, subRoot);
+            }
+
+        }
+
         public void BFS(TreeNode root)
         {
             var queue = new Queue<TreeNode>();
@@ -122,6 +139,7 @@ namespace ProblemSolving.DS.Trees
             PostOrder(root.right);
             Console.WriteLine(root.val);
         }
+
 
 
         public TreeNode InvertTree(TreeNode root)
