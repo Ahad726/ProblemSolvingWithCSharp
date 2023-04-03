@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -9,21 +10,89 @@ namespace ProblemSolving.DS.Trees
     public class BST
     {
 
-        public bool IsSubtree(TreeNode root, TreeNode subRoot)
+        public int KthSmallest(TreeNode root, int k)
         {
-            if (root == null & subRoot == null)
-                return true;
-            if (root == null || subRoot == null)
-                return false;
-            if (root.val == subRoot.val)
+            var n = 0;
+            var cur = root;
+            var stack = new Stack<TreeNode>();
+            stack.Push(cur);
+
+            while ( stack.Count > 0)
             {
-                return IsSubtree(root.left, subRoot.left) && IsSubtree(root.right, subRoot.right);
-            }
-            else
-            {
-                return IsSubtree(root.left, subRoot) && IsSubtree(root.right, subRoot);
+                while (cur != null)
+                {
+                    cur = cur.left;
+                    if (cur != null)
+                        stack.Push(cur);
+                }
+
+                cur = stack.Pop();
+                n++;
+
+                if (n == k)
+                {
+                    break;
+                }
+
+                cur = cur.right;
+                if (cur != null)
+                {
+
+                    stack.Push(cur);
+                }
+
+
             }
 
+            return cur.val;
+        }
+
+        public bool IsValidBST(TreeNode root)
+        {
+
+            if (root.left == null && root.right == null) return true;
+            if (root.left == null || root.right == null)
+            {
+                if ((root.right?.val > root.val) || (root.left?.val < root.val))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            IsValidBST(root.left);
+            IsValidBST(root.right);
+
+            return IsValidBST(root.left) && IsValidBST(root.right) && (root.val > root.left.val && root.val < root.right.val);
+        }
+
+        public bool IsBST(int left, int right)
+        {
+
+            if (left > right) return true;
+            else return false;
+        }
+        public bool IsSubtree(TreeNode root, TreeNode subRoot)
+        {
+            if (root == null)
+                return root == subRoot;
+            if (root.val == subRoot?.val && SameTree(root, subRoot))
+                return true;
+
+            return IsSubtree(root.left, subRoot) || IsSubtree(root.right, subRoot);
+        }
+
+        private bool SameTree(TreeNode root, TreeNode subRoot)
+        {
+            if (root == null && subRoot == null) return true;
+            if (root != null && subRoot != null && root.val == subRoot.val)
+            {
+                return SameTree(root.left, subRoot.left) && SameTree(root.right, subRoot.right);
+            }
+
+            return false;
         }
 
         public void BFS(TreeNode root)
@@ -35,9 +104,9 @@ namespace ProblemSolving.DS.Trees
             while (queue.Count > 0)
             {
                 var curr = queue.Dequeue();
-                if(curr.left != null) 
+                if (curr.left != null)
                     queue.Enqueue(curr.left);
-                if(curr.right != null)
+                if (curr.right != null)
                     queue.Enqueue(curr.right);
                 Console.WriteLine(curr.val);
             }
@@ -46,7 +115,7 @@ namespace ProblemSolving.DS.Trees
 
         public IList<IList<int>> LevelOrder(TreeNode root)
         {
-            
+
             var queue = new Queue<TreeNode>();
             var rootList = new List<IList<int>>();
             if (root == null) return rootList;
@@ -61,9 +130,9 @@ namespace ProblemSolving.DS.Trees
                 {
                     var curr = queue.Dequeue();
                     currList.Add(curr.val);
-                    if(curr.left != null)
+                    if (curr.left != null)
                         queue.Enqueue(curr.left);
-                    if(curr.right != null)
+                    if (curr.right != null)
                         queue.Enqueue(curr.right);
                     currLevelCout--;
                 }

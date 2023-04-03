@@ -9,14 +9,13 @@ namespace ProblemSolving.DS.Trees
         static void Main(string[] args)
         {
             var bst = new BST();
-            var root = bst.Insert(null, 4);
-            bst.Insert(root, 3);
-            bst.Insert(root,10);
-            bst.Insert(root, 2);
-            bst.Insert(root, 5);
-            bst.Insert(root, 12);
+            var root = bst.Insert(null, 3);
+            bst.Insert(root, 1);
+            bst.Insert(root,2);
+            bst.Insert(root,4);
+            
 
-            bst.BFS(root);
+            var result = bst.KthSmallest(root, 4);
             //var list = bst.LevelOrder(root);
 
 
